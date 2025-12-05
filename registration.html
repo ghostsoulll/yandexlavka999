@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="link">
+        <span class="logo">Яндекс лавка</span>
+      </a>
+      <ul>
+        <a href="index.html" class="link_ul">
+          <li>Главная</li>
+        </a>
+        <a href="requirements.html" class="link_ul">
+          <li>Требования</li>
+        </a>
+        <a href="registration.html" class="link_ul">
+          <li>Зарегистрироваться</li>
+        </a>
+      </ul>
+    </header>
+    <form action="/submit">
+    <div class="basedgod">
+        <h1>Шаг 1: Контактная информация</h1>
+        <h4>Заполните свои данные:</h4>
+        <br>
+        <div class="form_1">
+          <div class="for_form_1">
+            <label for="name">ФИО:</label>
+            <input type="text" name="name" placeholder="Введите ФИО" required>
+          </div>
+          <div class="for_form_1">
+            <label for="phone_number">Телефон: </label>
+            <input type="text" name="phone_number" placeholder="Введите телефон" required>
+          </div>
+        </div>
+
+        <br><br>
+
+        <label for="mail">Электронная почта:</label><br>
+        <input type="text" name="mail" placeholder="Введите email" required>      
+        
+        <br><br>
+
+        <label for="adress">Адрес:</label><br>
+        <input type="text" name="adress" placeholder="Введите адрес" required>     
+        
+        <br><br>
+
+        <label for="comment">Опыт работы:</label><br>
+        <textarea name="comment" rows="4" cols="50" placeholder="Расскажите о вашем опыте работы(если есть)" required></textarea>
+        
+
+        <br><br>
+
+            <div class="step_1">
+                <h1>Шаг 2: Транспорт</h1>
+                <h4>Выберите транспорт:</h4>
+                <br>
+                <form action="/submit">
+                    <input type="radio" name="transport" value="foot" id="foot" required>
+                    <label for="foot">Пеший курьер</label>
+                    <br><br>
+                    <input type="radio" name="transport" value="bike" id="bike" required>
+                    <label for="bike">Велосипед/самокат</label><br><br>
+                    <input type="radio" name="transport" value="car" id="car" required>
+                    <label for="car">Автомобиль</label>
+                    <br><br>
+                    <input type="radio" name="transport" value="public" id="public" required>
+                    <label for="public">Общественный транспорт</label>
+            </div>
+            <br>
+            <div>
+                <h1>Шаг 3: График</h1>
+                <h4>Выберите предпочтительный график:</h4>
+                <br>
+                    <input type="checkbox" name="schedule" value="morning" id="morning">
+                    <label for="morning">Утро (8:00-14:00)</label><br>
+
+                    <br>
+                    
+                    <input type="checkbox" name="schedule" value="day" id="day">
+                    <label for="day">День (14:00-20:00)</label><br>
+
+                    <br>
+
+                    <input type="checkbox" name="schedule" value="evening" id="evening">
+                    <label for="evening">Вечер (20:00-02:00)</label><br>
+
+                    <br>
+
+                    <input type="checkbox" name="schedule" value="weekend" id="weekend">
+                    <label for="weekend">Выходные дни</label>
+               
+            </div>
+        
+
+        <br><br>
+
+        <div class="form-group checkbox">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">Я согласен с условиями работы и обработкой персональных данных</label>
+        </div>
+
+        <br><br>
+
+        <div class="buttons">
+            <input type="reset" value="Очистить форму">
+            <input type="submit" value="Зарегистрироваться">
+        </div>
+    </div>
+</form>
+  <div class="footer-bottom">
+      <p>© 2025 Яндекс Лавка | Партнерская программа</p>
+      <p>
+        Это неофициальный сайт для привлечения курьеров. Все вопросы по работе
+        обращайтесь в службу поддержки Яндекс Лавки.
+      </p>
+    </div>
+  </body>
+</html>
